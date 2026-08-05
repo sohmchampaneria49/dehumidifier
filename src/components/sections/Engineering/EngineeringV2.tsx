@@ -41,7 +41,7 @@ export default function EngineeringV2() {
           </p>
         </div>
 
-        {/* ================= MAIN LAYOUT ================= */}
+        {/* ================= LAYOUT ================= */}
 
         <div className={styles.layout}>
           {/* ================= LEFT PANEL ================= */}
@@ -86,9 +86,9 @@ export default function EngineeringV2() {
                     <Image
                       src={spot.image}
                       alt={spot.title}
-                      width={1536}
-                      height={1024}
+                      fill
                       priority
+                      sizes="(max-width:768px) 100vw, 60vw"
                       className={styles.image}
                     />
                   </motion.div>
@@ -132,19 +132,21 @@ export default function EngineeringV2() {
                 </span>
 
                 <div className={styles.specs}>
-  {current.specs.map((spec) => (
-    <div
-      key={spec}
-      className={styles.spec}
-    >
-      <span className={styles.specIcon}>
-        ✓
-      </span>
+                  {current.specs.map((spec) => (
+                    <div
+                      key={spec}
+                      className={styles.spec}
+                    >
+                      <span
+                        className={styles.specIcon}
+                      >
+                        ✓
+                      </span>
 
-      <span>{spec}</span>
-    </div>
-  ))}
-</div>
+                      <span>{spec}</span>
+                    </div>
+                  ))}
+                </div>
 
                 <p>{current.description}</p>
               </motion.div>
@@ -165,7 +167,9 @@ export default function EngineeringV2() {
                       ? styles.componentActive
                       : ""
                   }`}
-                  onClick={() => setActive(index)}
+                  onClick={() =>
+                    setActive(index)
+                  }
                 >
                   <span className={styles.itemNumber}>
                     {spot.number}

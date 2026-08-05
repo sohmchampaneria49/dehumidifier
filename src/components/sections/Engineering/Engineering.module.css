@@ -526,3 +526,181 @@ FLOATING MACHINE
 
     z-index:0;
 }
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 1200px){
+
+    .layout{
+        grid-template-columns:1fr;
+        gap:70px;
+        min-height:auto;
+    }
+
+    .layout::after{
+        display:none;
+    }
+
+    .leftPanel{
+        min-height:600px;
+    }
+
+    .machine{
+        width:100%;
+        max-width:900px;
+        margin:auto;
+    }
+
+    .rightPanel{
+        max-width:850px;
+        margin:auto;
+        width:100%;
+    }
+}
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .section{
+        padding:90px 0;
+    }
+
+    .container{
+        width:min(92%,500px);
+    }
+
+    .header{
+        margin-bottom:60px;
+    }
+
+    .title{
+        font-size:2.6rem;
+        line-height:1;
+    }
+
+    .description{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .leftPanel{
+        min-height:auto;
+    }
+
+    .leftPanel::before{
+        width:420px;
+        height:420px;
+        filter:blur(18px);
+    }
+
+    .machine{
+        width:100%;
+        max-width:100%;
+        aspect-ratio:auto;
+        animation:none;
+    }
+
+    .image{
+        width:100%;
+        height:auto;
+    }
+
+    .activeCard{
+        padding:28px;
+        border-radius:24px;
+    }
+
+    .cardNumber{
+        font-size:3rem;
+        margin-bottom:12px;
+    }
+
+    .activeCard h3{
+        font-size:1.8rem;
+        line-height:1.1;
+    }
+
+    .category{
+        font-size:.75rem;
+        margin:12px 0 22px;
+    }
+
+    .specs{
+        gap:10px;
+        margin-bottom:24px;
+    }
+
+    .spec{
+        font-size:.85rem;
+    }
+
+    .componentList{
+        gap:10px;
+    }
+
+    .componentItem{
+        padding:18px;
+        gap:16px;
+    }
+
+    .itemNumber{
+        min-width:45px;
+        font-size:1.4rem;
+    }
+
+    .componentItem h4{
+        font-size:1rem;
+    }
+
+    .componentItem p{
+        font-size:.82rem;
+    }
+}
+
+/* ==========================================================
+SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .title{
+        font-size:2.1rem;
+    }
+
+    .description{
+        font-size:.95rem;
+    }
+
+    .activeCard{
+        padding:22px;
+    }
+
+    .cardNumber{
+        font-size:2.5rem;
+    }
+
+    .activeCard h3{
+        font-size:1.5rem;
+    }
+
+    .componentItem{
+        padding:16px;
+    }
+
+    .itemNumber{
+        font-size:1.2rem;
+        min-width:36px;
+    }
+
+    .componentItem h4{
+        font-size:.95rem;
+    }
+
+    .componentItem p{
+        font-size:.78rem;
+    }
+}

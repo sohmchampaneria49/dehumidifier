@@ -1,77 +1,73 @@
 export const hotspots = [
   {
     id: 1,
-    title: "Rotary Compressor",
-    category: "Industrial Grade",
-    image: "/images/exploded-compressor.png",
-
+    number: "01",
+    title: "Smart Controller",
+    subtitle: "Digital Control System",
+    category: "CONTROL MODULE",
+    image: "/images/exploded-controller.png",
     specs: [
-      "Continuous Duty",
-      "Low Noise",
-      "Energy Efficient",
+      "Humidity Sensor",
+      "Touch Interface",
+      "Auto Protection",
     ],
-
     description:
-      "High-performance rotary compressor engineered for reliable 24/7 industrial operation.",
-
-    x: 1310,
-    y: 1040,
+      "Advanced digital controller providing precise humidity regulation for industrial environments.",
+    x: 0,
+    y: 0,
   },
 
   {
     id: 2,
+    number: "02",
     title: "Heat Exchanger",
-    category: "Copper Coil",
+    subtitle: "Copper Coil Technology",
+    category: "HEAT EXCHANGER",
     image: "/images/exploded-coil.png",
-
     specs: [
-      "High Thermal Transfer",
+      "Copper Coil",
       "Corrosion Resistant",
-      "Optimized Airflow",
+      "High Efficiency",
     ],
-
     description:
-      "Large copper evaporator designed to maximize moisture extraction.",
-
-    x: 930,
-    y: 760,
+      "Optimized heat exchange system for maximum moisture removal.",
+    x: 0,
+    y: 0,
   },
 
   {
     id: 3,
-    title: "EC Fan",
-    category: "Energy Saving",
-    image: "/images/exploded-fan.png",
-
+    number: "03",
+    title: "Rotary Compressor",
+    subtitle: "Industrial Cooling",
+    category: "COMPRESSOR",
+    image: "/images/exploded-compressor.png",
     specs: [
-      "High Airflow",
-      "Low Power",
-      "Variable Speed",
+      "Low Noise",
+      "Energy Efficient",
+      "Continuous Duty",
     ],
-
     description:
-      "Electronically commutated fan provides powerful airflow while reducing energy consumption.",
-
-    x: 1710,
-    y: 930,
+      "Industrial-grade rotary compressor engineered for long service life.",
+    x: 0,
+    y: 0,
   },
 
   {
     id: 4,
-    title: "Smart Controller",
-    category: "Digital Control",
-    image: "/images/exploded-controller.png",
-
+    number: "04",
+    title: "EC Fan",
+    subtitle: "High Airflow",
+    category: "AIR MOVEMENT",
+    image: "/images/exploded-fan.png",
     specs: [
-      "Humidity Sensor",
-      "Auto Protection",
-      "Touch Interface",
+      "EC Motor",
+      "Variable Speed",
+      "High Efficiency",
     ],
-
     description:
-      "Intelligent digital controller delivers precise humidity monitoring.",
-
-    x: 1220,
-    y: 220,
+      "Electronically commutated fan delivering consistent airflow with low energy consumption.",
+    x: 0,
+    y: 0,
   },
 ];
